@@ -6,11 +6,6 @@ body {
 }
 
 
-	h1 {
-		font-size: 10px;
-	}
-
-
 .interface {
 	margin-top: 90px;
 	line-height: 3;
@@ -46,8 +41,7 @@ body {
 }
 
 #loader .bar {
-/*	stroke: #ffdb4d;*/
-	stroke: red;
+	stroke: #ffdb4d;
 }
 
 #loader {
@@ -143,6 +137,9 @@ input[type="checkbox"].switch_1:checked:after {
 		margin-top: 20px;
 				transform: scale(0.8);
 
+	}
+		h1 {
+		font-size: 14px;
 	}
 
 }
