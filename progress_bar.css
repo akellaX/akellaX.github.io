@@ -5,6 +5,7 @@ body {
    overflow: hidden;
 }
 
+
 .interface {
 	margin-top: 90px;
 	line-height: 3;
@@ -128,12 +129,16 @@ input[type="checkbox"].switch_1:checked:after {
 	#container {
 		display: inline-block;
 		width: 50%;
-		transform: scale(0.2);
+		transform: scale(0.8);
 	}
 	.interface {
 		display: inline-block;
 		margin-top: 20px;
-				transform: scale(0.2);
+				transform: scale(0.8);
 
+	}
+
+	h1 {
+		font-size: 10px;
 	}
 }
