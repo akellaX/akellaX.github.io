@@ -6,7 +6,7 @@ body {
 }
 
 .interface {
-	margin-top: 60px;
+	margin-top: 90px;
 	line-height: 3;
 	text-align: center;
 
@@ -18,6 +18,10 @@ body {
 .desc {
 	font-size: 20px;
 	margin-bottom: 10px;
+}
+
+.title {
+	margin-left: 20px;
 }
 
 #percent {
@@ -108,4 +112,14 @@ input[type="checkbox"].switch_1:after {
 
 input[type="checkbox"].switch_1:checked:after {
 	left: calc(100% - 1.5em);
+}
+
+@media (orientation: landscape) {
+	#container {
+		display: inline-block;
+		width: 50%;
+	}
+	.interface {
+		display: inline-block;
+	}
 }
