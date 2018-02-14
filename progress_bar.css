@@ -121,5 +121,6 @@ input[type="checkbox"].switch_1:checked:after {
 	}
 	.interface {
 		display: inline-block;
+		margin-top: 20px;
 	}
 }
