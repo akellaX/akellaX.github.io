@@ -46,7 +46,8 @@ body {
 }
 
 #loader .bar {
-	stroke: #ffdb4d;
+/*	stroke: #ffdb4d;*/
+	stroke: red;
 }
 
 #loader {
