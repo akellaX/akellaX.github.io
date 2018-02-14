@@ -94,3 +94,12 @@ input[type="checkbox"].switch_1{
   input[type="checkbox"].switch_1:checked:after{
 	left: calc(100% - 1.5em);
   }
+
+@media screen and (max-width: 736px) {
+	#container {
+	line-height: 3;
+		padding: 30px 90px;
+		height: 300px;
+		width: 300px;
+}
+}

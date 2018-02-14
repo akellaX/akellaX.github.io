@@ -34,10 +34,10 @@ function initCheckbox() {
 		document.getElementById("hide").addEventListener("change", function() {
 		if(this.checked)
 			{
-			document.getElementById("loader").style.display = "none";
+			document.getElementById("loader").style.visibility = "hidden";
 			}
 		else
-			document.getElementById("loader").style.display = "block";
+			document.getElementById("loader").style.visibility = "visible";
 	})
 }
 
