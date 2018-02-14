@@ -128,12 +128,12 @@ input[type="checkbox"].switch_1:checked:after {
 	#container {
 		display: inline-block;
 		width: 50%;
-		transform: scale(0.6);
+		transform: scale(0.2);
 	}
 	.interface {
 		display: inline-block;
 		margin-top: 20px;
-				transform: scale(0.6);
+				transform: scale(0.2);
 
 	}
 }
