@@ -28,6 +28,7 @@ body {
 }
 
 /*Кастомизация чекбоксов*/
+
 .interface__switch_box + span {
 	display: -webkit-box;
 	display: -ms-flexbox;
