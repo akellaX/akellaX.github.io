@@ -2,26 +2,26 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="progress_bar.css">
+	<link rel="stylesheet" href="progress_bar/progress_bar.css">
+	<link rel="stylesheet" href="main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
 	<h1 class="title">Progress</h1>
-	<div class= "progress-bar"></div>
-
+	<div class="progress-bar"></div>
 	<div class="interface">
-		<input class="percent" type="number"><span class="desc"> Value</span>
-		<div class="switch_box box_1">
-			<input type="checkbox" class="switch_1"><span class="desc">
+		<input class="interface__input" type="number"><span class="desc"> Value</span>
+		<div class="interface__switch_box">
+			<input type="checkbox" class="interface__switch_box__switch_1"><span class="interface__switch_box__description">
 			Animate</span>
 		</div>
-		<div class="switch_box box_1">
-			<input type="checkbox" class="switch_1"><span class="desc"> Hide</span>
+		<div class="interface__switch_box">
+			<input type="checkbox" class="interface__switch_box__switch_1"><span class="interface__switch_box__description"> Hide</span>
 		</div>
 	</div>
 
-	<script src="progress_bar.js"></script>
+	<script src="progress_bar/progress_bar.js"></script>
 	<script src="main.js"></script>
 </body>
 
