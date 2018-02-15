@@ -8,13 +8,13 @@ function initInterface() {
 	input.addEventListener("change", function () {
 		progress.setValue(this.value);
 	});
-	document.getElementsByClassName("interface__switch_box__switch_1")[0].addEventListener("change", function () {
+	document.getElementsByClassName("switch_box__switch_1")[0].addEventListener("change", function () {
 		if (this.checked) {
 			progress.setMod("animated", "yes")
 		} else
 			progress.setMod("animated", "")
 	})
-	document.getElementsByClassName("interface__switch_box__switch_1")[1].addEventListener("change", function () {
+	document.getElementsByClassName("switch_box__switch_1")[1].addEventListener("change", function () {
 		if (this.checked) {
 			progress.setMod("hide", "yes");
 		} else

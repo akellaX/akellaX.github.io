@@ -11,7 +11,7 @@ body {
 
 }
 
-.interface__switch_box__description {
+.switch_box__description {
 	font-size: 20px;
 	margin-bottom: 10px;
 }
@@ -46,7 +46,7 @@ body {
 	flex: 1;
 }
 
-input[type="checkbox"].interface__switch_box__switch_1 {
+input[type="checkbox"].switch_box__switch_1 {
 	font-size: 20px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -64,11 +64,11 @@ input[type="checkbox"].interface__switch_box__switch_1 {
 
 }
 
-input[type="checkbox"].interface__switch_box__switch_1:checked {
+input[type="checkbox"].switch_box__switch_1:checked {
 	background: #7ed321;
 }
 
-input[type="checkbox"].interface__switch_box__switch_1:after {
+input[type="checkbox"].switch_box__switch_1:after {
 	position: absolute;
 	content: "";
 	width: 1.5em;
@@ -84,7 +84,7 @@ input[type="checkbox"].interface__switch_box__switch_1:after {
 	transition: all .2s ease-in-out;
 }
 
-input[type="checkbox"].interface__switch_box__switch_1:checked:after {
+input[type="checkbox"].switch_box__switch_1:checked:after {
 	left: calc(100% - 1.5em);
 }
 
