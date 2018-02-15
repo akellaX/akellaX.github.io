@@ -14,13 +14,43 @@
 	stroke: #ffdb4d;
 }
 
-
 .progress-bar__loader {
+	-webkit-animation: spin 3s linear infinite;
+	-webkit-animation-play-state: paused;
+	-moz-animation: spin 3s linear infinite;
+	-moz-animation-play-state: paused;
+	-ms-animation: spin 3s linear infinite;
+	-ms-animation-play-state: paused;
+	-o-animation: spin 3s linear infinite;
+	-o-animation-play-state: paused;
 	animation: spin 3s linear infinite;
 	animation-play-state: paused;
 }
-
 @keyframes spin {
+	0% {
+		transform: rotate(-90deg);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
+@-moz-@keyframes spin {
+	0% {
+		transform: rotate(-90deg);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
+@-webkit-@keyframes spin {
+	0% {
+		transform: rotate(-90deg);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
+@-o-@keyframes spin {
 	0% {
 		transform: rotate(-90deg);
 	}
