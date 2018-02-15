@@ -12,7 +12,7 @@ body {
 	text-align: center;
 
 }
-.container {
+.progress-bar {
 	text-align: center;
 }
 
@@ -44,6 +44,7 @@ body {
 	stroke: #ffdb4d;
 }
 
+
 .loader {
 	animation: spin 3s linear infinite;
 	animation-play-state: paused;
@@ -73,6 +74,7 @@ body {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
+	text-align: left;
 }
 
 input[type="checkbox"].switch_1 {
@@ -89,6 +91,8 @@ input[type="checkbox"].switch_1 {
 	outline: none;
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
+		vertical-align: middle;
+
 }
 
 input[type="checkbox"].switch_1:checked {
@@ -122,22 +126,28 @@ input[type="checkbox"].switch_1:checked:after {
 	}
 	.interface {
 		display: inline-block;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 
 }
 @media (orientation: landscape) and (max-width: 768px){
-	.container {
+	.progress-bar {
 		display: inline-block;
 		width: 50%;
 		transform: scale(0.8);
 	}
 	.interface {
 		display: inline-block;
-		margin-top: 20px;
 				transform: scale(0.8);
 
 	}
+		h1 {
+		font-size: 14px;
+	}
+
+}
+
+@media (max-width: 768px){
 		h1 {
 		font-size: 14px;
 	}
