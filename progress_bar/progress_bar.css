@@ -2,6 +2,7 @@
 	text-align: center;
 }
 
+/*Закрашивание нижнего блока белым*/
 
 .progress-bar__loader circle {
 	stroke-dashoffset: 0;
@@ -10,9 +11,13 @@
 	stroke-width: 1em;
 }
 
+/*Закрашивание верхнего блока желтым*/
+
 .progress-bar__loader .bar {
 	stroke: #ffdb4d;
 }
+
+/*анимация вразения под разными движками*/
 
 .progress-bar__loader {
 	-webkit-animation: spin 3s linear infinite;
@@ -26,6 +31,7 @@
 	animation: spin 3s linear infinite;
 	animation-play-state: paused;
 }
+
 @keyframes spin {
 	0% {
 		transform: rotate(-90deg);
@@ -34,6 +40,7 @@
 		transform: rotate(270deg);
 	}
 }
+
 @-moz-@keyframes spin {
 	0% {
 		transform: rotate(-90deg);
@@ -42,6 +49,7 @@
 		transform: rotate(270deg);
 	}
 }
+
 @-webkit-@keyframes spin {
 	0% {
 		transform: rotate(-90deg);
@@ -50,6 +58,7 @@
 		transform: rotate(270deg);
 	}
 }
+
 @-o-@keyframes spin {
 	0% {
 		transform: rotate(-90deg);
@@ -59,11 +68,25 @@
 	}
 }
 
+/*Подгон под телефонное разрешение и горизонтальную ориентацию*/
 
 @media (orientation: landscape) {
 	.progress-bar {
 		display: inline-block;
 		width: 50%;
+	}
+	.container {
+		width: 100%;
+		height: 50%;
+		display: inline-flex;
+	}
+
+}
+
+@media (orientation: portrait) {
+	.interface {
+		width: 63%;
+		float: right;
 	}
 
 }
@@ -74,5 +97,4 @@
 		width: 50%;
 		transform: scale(0.8);
 	}
-
 }

@@ -2,7 +2,7 @@ var progress = new Progress_bar();
 window.onload = function () {
 	initInterface();
 }
-
+// Иницилизация интерфейса: чекбоксов и инпута
 function initInterface() {
 	var input = document.getElementsByClassName("interface__input")[0];
 	input.addEventListener("change", function () {
@@ -16,8 +16,8 @@ function initInterface() {
 	})
 	document.getElementsByClassName("interface__switch_box__switch_1")[1].addEventListener("change", function () {
 		if (this.checked) {
-			document.getElementsByClassName("progress-bar__loader")[0].style.visibility = "hidden";
+			progress.setMod("hide", "yes");
 		} else
-			document.getElementsByClassName("progress-bar__loader")[0].style.visibility = "visible";
+			progress.setMod("hide", "");
 	})
 }
