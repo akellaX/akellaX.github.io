@@ -12,7 +12,7 @@ body {
 	text-align: center;
 
 }
-#container {
+.container {
 	text-align: center;
 }
 
@@ -25,7 +25,7 @@ body {
 	margin-left: 20px;
 }
 
-#percent {
+.percent {
 	width: 80px;
 	border-radius: 30px;
 	height: 40px;
@@ -33,18 +33,18 @@ body {
 	text-align: center
 }
 
-#loader circle {
+.loader circle {
 	stroke-dashoffset: 0;
 	transition: stroke-dashoffset 1s linear;
 	stroke: #efefec;
 	stroke-width: 1em;
 }
 
-#loader .bar {
+.loader .bar {
 	stroke: #ffdb4d;
 }
 
-#loader {
+.loader {
 	animation: spin 3s linear infinite;
 	animation-play-state: paused;
 }
@@ -116,7 +116,7 @@ input[type="checkbox"].switch_1:checked:after {
 }
 
 @media (orientation: landscape) {
-	#container {
+	.container {
 		display: inline-block;
 		width: 50%;
 	}
@@ -127,7 +127,7 @@ input[type="checkbox"].switch_1:checked:after {
 
 }
 @media (orientation: landscape) and (max-width: 768px){
-	#container {
+	.container {
 		display: inline-block;
 		width: 50%;
 		transform: scale(0.8);

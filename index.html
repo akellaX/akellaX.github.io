@@ -3,29 +3,26 @@
 
 <head>
 	<link rel="stylesheet" href="progress_bar.css">
-	<script src="progress_bar.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
 	<h1 class="title">Progress</h1>
-	<div id="container">
-		<svg id="loader" width="200" height="200">
-			<circle id = "b_circle" r = "90" cx = "100" cy = "100" fill = "transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-		  	<circle id = "s_circle" class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-		</svg>
-	</div>
+	<div class= "progress-bar"></div>
 
 	<div class="interface">
-		<input id="percent" type="number"><span class="desc"> Value</span>
+		<input class="percent" type="number"><span class="desc"> Value</span>
 		<div class="switch_box box_1">
-			<input id="animation" type="checkbox" class="switch_1"><span class="desc">
+			<input type="checkbox" class="switch_1"><span class="desc">
 			Animate</span>
 		</div>
 		<div class="switch_box box_1">
-			<input id="hide" type="checkbox" class="switch_1"><span class="desc">Hide</span>
+			<input type="checkbox" class="switch_1"><span class="desc">Hide</span>
 		</div>
 	</div>
+
+	<script src="progress_bar.js"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>
