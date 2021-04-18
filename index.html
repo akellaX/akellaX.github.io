@@ -1,30 +1,22 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-	<link rel="stylesheet" href="progress_bar/progress_bar.css">
-	<link rel="stylesheet" href="main.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+<link rel="stylesheet" href="./css/styles.css">
 
 <body>
-	<h1 class="title">Progress</h1>
-	<div class="container">
-		<div class="progress-bar"></div>
-		<div class="interface">
-			<input class="interface__input" type="number"><span class="desc"> Value</span>
-			<div class="interface__switch_box">
-				<input type="checkbox" class="switch_box__switch_1"><span class="switch_box__description">
-			Animate</span>
-			</div>
-			<div class="interface__switch_box">
-				<input type="checkbox" class="switch_box__switch_1"><span class="switch_box__description"> Hide</span>
-			</div>
-		</div>
-	</div>
+    <div class="text-areas">
+        <textarea id='editor' data-bind='textInput: json'> </textarea>
+        <div id='diff' data-bind='foreach: diffArray'>
+            <div class="line">
+                <pre class="line-number" data-bind="text: $index"></pre>
+                <pre class='line-text' data-bind="html: text"></pre>
+            </div>
+        </div>
+    </div>
+    <button id="submit-button" data-bind="click: onSubmit">Submit</button>
 
-	<script src="progress_bar/progress_bar.js"></script>
-	<script src="main.js"></script>
+    <script type='text/javascript' src='./js/knockout-3.5.1.js'></script>
+    <script type='text/javascript' src='./js/diff_match_patch.js'></script>
+    <script type='text/javascript' src='./js/main.js'></script>
 </body>
 
 </html>
