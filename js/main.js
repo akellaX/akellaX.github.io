@@ -32,7 +32,7 @@
                         if (brIndex > 0) {
                             const strWithEndSpan = stringWithSpan.substring(0, brIndex) + '</span>' + stringWithSpan.substring(brIndex);
                             const newIndex = brIndex + '</span>'.length;
-                            const strWithOpenSpan = strWithEndSpan.substring(0, newIndex + 2) + `<span class='red'>` + strWithEndSpan.substring(newIndex + 2)
+                            const strWithOpenSpan = strWithEndSpan.substring(0, newIndex + 1) + `<span class='red'>` + strWithEndSpan.substring(newIndex + 1)
                             return strWithOpenSpan;
                         }
                         return  stringWithSpan;
