@@ -17,23 +17,17 @@
                     case 0: return el[1]
                     case 1: { 
                         const stringWithSpan = `<span class='green'>${el[1]}</span>`;
-                        const brIndex = stringWithSpan.indexOf('\n');
-                        if (brIndex > 0) {
-                            const strWithEndSpan = stringWithSpan.substring(0, brIndex) + '</span>' + stringWithSpan.substring(brIndex);
-                            const newIndex = brIndex + '</span>'.length;
-                            const strWithOpenSpan = strWithEndSpan.substring(0, newIndex + 2) + `<span class='green'>` + strWithEndSpan.substring(newIndex + 2)
-                            return strWithOpenSpan;
+                        const splitLineBreaker = stringWithSpan.split('\n');
+                        if (splitLineBreaker.length > 1) {
+                            return splitLineBreaker.join(`</span>\n<span class='green'>`);
                         }
                         return  stringWithSpan;
                     }
                     case -1: { 
                         const stringWithSpan = `<span class='red'>${el[1]}</span>` ;
-                        const brIndex = stringWithSpan.indexOf('\n');
-                        if (brIndex > 0) {
-                            const strWithEndSpan = stringWithSpan.substring(0, brIndex) + '</span>' + stringWithSpan.substring(brIndex);
-                            const newIndex = brIndex + '</span>'.length;
-                            const strWithOpenSpan = strWithEndSpan.substring(0, newIndex + 1) + `<span class='red'>` + strWithEndSpan.substring(newIndex + 1)
-                            return strWithOpenSpan;
+                        const splitLineBreaker = stringWithSpan.split('\n');
+                        if (splitLineBreaker.length > 1) {
+                            return splitLineBreaker.join(`</span>\n<span class='red'>`);
                         }
                         return  stringWithSpan;
                     }

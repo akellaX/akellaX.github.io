@@ -4,12 +4,12 @@ body {
 }
 #editor {
     width: 500px;
-    height: 700px;
+    height: 500px;
     margin-right: 50px;
 }
 #diff {
     width: 500px;
-    height: 700px;
+    height: 500px;
     border: black solid 1px;
 }
 #submit-button {
